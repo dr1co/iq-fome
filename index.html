@@ -161,11 +161,11 @@
             </div>
         </div>
     </div>
-    <div class="inferior" onclick="confirmarPedido()">
-        <button class="botao">
+    <div class="inferior">
+        <button class="botao-fecha-pedido" onclick="fecharPedido()" disabled>
             <h2> Selecione os 3 itens <br> 
                 para fechar o pedido </h2>
-            </button>
+        </button>
     </div>
     <div class="confirmacao">
         <div class="tela-confirmacao">
@@ -175,13 +175,21 @@
                 <h2 class="preco-prato">aaaa</h2>
             </div>
             <div class="dados">
-                <h2 class="pedido-prato">aaaa</h2>
-                <h2 class="preco-prato">aaaa</h2>
+                <h2 class="pedido-bebida">aaaa</h2>
+                <h2 class="preco-bebida">aaaa</h2>
             </div>
             <div class="dados">
-                <h2 class="pedido-prato">aaaa</h2>
-                <h2 class="preco-prato">aaaa</h2>
+                <h2 class="pedido-sobremesa">aaaa</h2>
+                <h2 class="preco-sobremesa">aaaa</h2>
             </div>
+            <div class="dados">
+                <h3> TOTAL: </h3>
+                <h3 class="preco-total">aaaa</h3>
+            </div>
+            <button class="botao-confirmar" onclick="confirmarPedido()">
+                <h3> Tudo certo, pode pedir! </h3>
+            </button>
+            <h3 class="botao-cancelar" onclick="cancelarPedido()"> Cancelar </h3>
         </div>
     </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

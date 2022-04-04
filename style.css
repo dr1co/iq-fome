@@ -147,7 +147,7 @@ p {
     z-index: 1;
 }
 
-.botao {
+.botao-fecha-pedido {
     width: 85%;
     height: 62px;
     border-radius: 31px;
@@ -177,14 +177,18 @@ p {
     height: 100%;
     background-color: rgb(255, 255, 255, 0.90);
     position: fixed;
-    display: flex;
+    display: none;
     align-items: center;
     top: 0;
     z-index: 2;
 }
 
+.exibir-confirmacao {
+    display: flex;
+}
+
 .tela-confirmacao {
-    width: 90%;
+    width: 377px;
     margin: auto;
     background-color: #50D074;
     border-radius: 9px;
@@ -197,10 +201,12 @@ p {
 .tela-confirmacao h3 {
     margin-bottom: 20px;
     color: #FFFFFF;
+    font-size: 22px;
 }
 
 .tela-confirmacao h2 {
     color: #FFFFFF;
+    font-size: 22px;
 }
 
 .dados {
@@ -209,4 +215,18 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.botao-confirmar {
+    width: 329px;
+    height: 52px;
+    margin: 24px 0;
+    border: 0px solid #000000;
+    padding-top: 12px;
+    border-radius: 26px;
+    background-color: #FFFFFF;
+}
+
+.botao-confirmar h3 {
+    color: #50D074;
 }
