@@ -80,7 +80,8 @@ function fecharPedido()
     document.querySelector(".pedido-sobremesa").innerHTML = `${stringSobremesa}`
     document.querySelector(".preco-sobremesa").innerHTML = `${precoSobremesa}`
     precoTotal = Number(precoPrato.replace("R$ ", "").replace(",", ".")) + Number(precoBebida.replace("R$ ", "").replace(",", ".")) + Number(precoSobremesa.replace("R$ ", "").replace(",", "."))
-    document.querySelector(".preco-total").innerHTML = `R$ ${precoTotal}0`
+    precoTotal = parseFloat(precoTotal).toFixed(2)
+    document.querySelector(".preco-total").innerHTML = `R$ ${precoTotal}`
     document.querySelector(".confirmacao").classList.add("exibir-confirmacao")
 }
 
@@ -92,7 +93,7 @@ function confirmarPedido()
 - Prato: ${stringPrato}
 - Bebida: ${stringBebida}
 - Sobremesa: ${stringSobremesa}
-Total: R$ ${precoTotal}0
+Total: R$ ${precoTotal}
     
 Nome: ${nome}
 Endereço de entrega: ${endereco}`
