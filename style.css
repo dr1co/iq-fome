@@ -42,6 +42,7 @@ p {
 .topo h1 {
     color: #FFFFFF;
     font-size: 44px;
+    padding-bottom: 8px;
 }
 
 .topo h2 {
@@ -80,10 +81,19 @@ p {
 
 .opcao {
     min-width: 172px;
+    max-width: 172px;
     margin-right: 16px;
 }
 
-.opcao:last-child() {
+.opcoes-prato:last-child {
+    margin-right: 0px;
+}
+
+.opcoes-bebida:last-child {
+    margin-right: 0px;
+}
+
+.opcoes-sobremesa:last-child {
     margin-right: 0px;
 }
 
